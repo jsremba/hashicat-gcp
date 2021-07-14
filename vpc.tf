@@ -3,7 +3,7 @@ module "network" {
   version = "3.2.2"
   # insert required variables here
   project_id = var.project
-  network_name = "jsremba-network"
+  network_name = "jsremba1-network"
  
   subnets = [
   {
