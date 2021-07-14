@@ -67,13 +67,9 @@ resource "google_compute_instance" "hashicat" {
   tags = ["http-server"]
 
   labels = {
-    name = "hashicat"
-  }
-
-  tags = {
+    name = "hashicat",
     "department" = "devops"}
-
-}
+  }
 
 resource "null_resource" "configure-cat-app" {
   depends_on = [
